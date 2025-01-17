@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Defter programının özelliklerini keşfedin!">
+    <title>Defter - Ana Sayfa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://github.com/YigitC7/Defter/blob/main/img/icon.png?raw=true" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f9;
+        }
+        header {
+            background: #6200ea;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .feature {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: #6200ea;
+        }
+        .feature p {
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ff9100;
+            text-decoration: none;
+        }
+        .commands {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .commands pre {
+            background: #f4f4f9;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .images {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header-with-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .header-with-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .info-box {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .info-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #6200ea;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .info-box a:hover {
+            background: #3700b3;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #03dac5;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        .download-btn:hover {
+            background: #018786;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-with-icon">
+            <img src="https://github.com/YigitC7/Defter/blob/main/img/icon.png?raw=true" alt="Defter Program İkonu">
+            <h1>Defter</h1>
+        </div>
+        <p>Sayfalar halinde not tutmanın en güvenli yolu!</p>
+    </header>
+
+    <main class="container">
+        <section class="images">
+            <img src="https://github.com/YigitC7/Defter/blob/main/img.png?raw=true" alt="Defter Pencere Görüntüsü">
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Linux ile Uyumluluk</h3>
+                <p>Defter, yalnızca Linux işletim sistemi için yazılmıştır ve sadece 64 bit mimarisini destekler.</p>
+            </div>
+            <div class="feature">
+                <h3>Güvenli Veri Tabanı</h3>
+                <p>Yazdığınız notlar, şifreli bir veri tabanında saklanır ve yalnızca sizin erişiminize açıktır.</p>
+            </div>
+            <div class="feature">
+                <h3>Kullanıcı Klasöründe Saklama</h3>
+                <p>Verileriniz, kullanıcı klasörünüzde bulunan .defter dizininde güvenle saklanır.</p>
+            </div>
+        </section>
+        <br>
+        <section class="features">
+            <div class="feature">
+                <h3>Özgürlük</h3>
+                <p>Bu proje, özgür yazılım olarak geliştirilmiştir ve kodları değiştirip dağıtmanıza olanak tanır.</p>
+            </div>
+            <div class="feature">
+                <h3>Güncellik</h3>
+                <p>Program sürekli geliştirilmektedir. Performans iyileştirmeleri ve yeni özellikler düzenli olarak eklenmektedir.</p>
+            </div>
+            <div class="feature">
+                <h3>Dünyada Bir İlk</h3>
+                <p>Sayfa düzenine sahip bir not tutma programı olarak Defter, benzersiz ve öncüdür.</p>
+            </div>
+        </section>
+
+
+        <section class="commands">
+            <h2>Paketler</h2>
+            <br>
+            <h3>Fedora için rpm</h3>
+            <p><strong>Kurulum:</strong></p>
+            <pre>curl -sSL https://yigit-packages.netlify.app/Defter/install.sh | bash</pre>
+            <p><strong>Kaldırma:</strong></p>
+            <pre>sudo rpm -e Defter</pre>
+            <p><strong>Güncelleme:</strong></p>
+            <pre>defter-guncelle</pre>
+            <br>
+            <h3>Diğer dağıtımlar için</h3>
+            <a href="https://drive.usercontent.google.com/download?id=1uve7MNtn9UxXNMXc94WsIYMxLCaXxt_5&export=download&authuser=0&confirm=t&uuid=6257c7db-39aa-41e3-b990-6f5c4d3df538&at=AIrpjvOOJgdlyANya9lXhe9FX_SU%3A1737120141925" class="download-btn">Defter'i İndir</a>
+
+        </section>
+
+        <section class="info-box">
+            <h3>İletişim</h3>
+            <p>Herhangi bir sorunuz veya geri bildiriminiz için bizimle iletişime geçin.</p>
+            <a href="mailto:yigitcitak.1817@gmail.com">E-posta Gönder</a>
+        </section>
+
+        <section class="info-box">
+            <h3>GitHub</h3>
+            <p>Defter projesinin kaynak kodlarını ve güncellemelerini inceleyin.</p>
+            <a href="https://github.com/YigitC7/Defter" target="_blank">GitHub Sayfasına Git</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Defter. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
