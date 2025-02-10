@@ -211,23 +211,21 @@
         </section>
 
         <section class="commands">
-            <h2>Paketler</h2>
+            <h2>Kurulum</h2>
             <br>
-            <h3>Fedora için RPM</h3>
-            <p><strong>4.0</strong></p>
-            <p><strong>Kurulum:</strong></p>
-            <pre>curl -sSL https://yigit-packages.netlify.app/Defter/install.sh | bash</pre>
+            <pre>git clone https://github.com/YigitC7/Defter && cd Defter && sudo sh install.sh</pre>
             <p><strong>Kaldırma:</strong></p>
-            <pre>sudo rpm -e Defter</pre>
-            <p><strong>Güncelleme:</strong></p>
-            <pre>defter-guncelle</pre>
-            <br>
-            <h3>Pardus / Ubuntu için DEB</h3>
-            <p><strong>4.0</strong></p>
-           <p><strong>Kurulum ve Güncelleme:</strong></p>
-            <pre>curl -sSL https://yigit-packages.netlify.app/Defter/deb/install.sh | bash</pre>
-            <p><strong>Kaldırma:</strong></p>
-            <pre>sudo apt remove defter</pre>
+            <pre>sudo sh install.sh</pre>
+            <h3>Eğer hata alıyorsanız şu komutu kullanın:</h3>
+            <pre>git clone https://github.com/YigitC7/Defter && cd Defter && sudo sh install.sh && python3 -m venv lib && source lib/bin/activate
+pip install --upgrade pip
+pip install tkinter
+pip install customtkinter pyinstaller
+pyinstaller --noconsole --onefile install/Defter.py
+sudo mkdir /usr/local/bin/defter
+sudo cp -r dist/Defter /usr/local/bin/defter/Defter
+sudo cp -r install/defter.png /usr/share/pixmaps/
+sudo cp -r install/Defter.desktop /usr/share/applications/</pre>
             <br>
             <h3>Diğer dağıtımlar için</h3>
             <a href="https://sourceforge.net/projects/defter/files/" class="download-btn">Defter'i İndir</a>
