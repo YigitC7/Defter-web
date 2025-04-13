@@ -245,14 +245,15 @@
         </section>
 
         <section class="commands">
-            <p><strong>Kurulum:</strong></p>
-    <a href="dosya.pdf" download class="indir-buton">
-        <span>⬇️</span> İndir
-    </a>
-            <pre>git clone https://github.com/YigitC7/Defter && cd Defter && sudo sh install.sh</pre>
-            <p><strong>Kaldırma:</strong></p>
-            <pre>sudo sh remove.sh</pre>
-            <h3>Eğer hata alıyorsanız şu komutu kullanın:</h3>
+            <h1>Kurulum</h1>
+            <br>
+            <p>Deb paketi indir (Ubuntu/Debian/Pardus Vb.)</p>
+            <a href="https://github.com/YigitC7/Defter/releases/download/6.0/Defter-6.0.deb" download class="indir-buton">
+                <span>⬇ </span> İndir
+            </a>
+            <br><br>
+            <h1>Manuel kurulum</h1>
+
             <pre>git clone https://github.com/YigitC7/Defter
 cd Defter
 python3 -m venv myev
@@ -263,7 +264,10 @@ pyinstaller --noconsole --onefile src/Defter.py
 sudo mkdir /usr/local/bin/defter
 sudo cp -r dist/Defter /usr/local/bin/defter/Defter
 sudo cp -r img/icon.png /usr/share/pixmaps/defter.png
-sudo cp -r install/Defter.desktop /usr/share/applications/<pre>
+sudo cp -r install/Defter.desktop /usr/share/applications/</pre>
+
+            <p>Kaldırma</p>
+            <pre>sudo sh remove.sh</pre>
 
     </main>
 
@@ -271,6 +275,7 @@ sudo cp -r install/Defter.desktop /usr/share/applications/<pre>
         <div class="footer-links">
             <a href="https://github.com/YigitC7/Defter" target="_blank">GitHub</a>
             <a href="mailto:yigitcitak.1817@gmail.com">E-posta</a>
+            <a href="https://yigitc7.netlify.app/">Hakkımda</a>
         </div>
         <p>&copy; 2025 Defter. Yiğit Çıtak</p>
     </footer>
