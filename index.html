@@ -150,20 +150,31 @@
         .info-box a:hover {
             background: #3700b3;
         }
-        .download-btn {
+        .indir-buton {
             display: inline-block;
-            margin-top: 2rem;
-            padding: 0.75rem 1.5rem;
-            background: #03dac5;
-            color: #fff;
+            padding: 12px 24px;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            color: white;
             border-radius: 5px;
-            font-size: 1.1rem;
             text-decoration: none;
-            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
-        .download-btn:hover {
-            background: #018786;
+        
+        .indir-buton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
+        
+        .indir-buton:active {
+            transform: translateY(0);
+        }
+    
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -235,6 +246,9 @@
 
         <section class="commands">
             <p><strong>Kurulum:</strong></p>
+    <a href="dosya.pdf" download class="indir-buton">
+        <span>⬇️</span> İndir
+    </a>
             <pre>git clone https://github.com/YigitC7/Defter && cd Defter && sudo sh install.sh</pre>
             <p><strong>Kaldırma:</strong></p>
             <pre>sudo sh remove.sh</pre>
